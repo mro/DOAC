@@ -1,0 +1,121 @@
+
+body {
+    background-color: #dfe8f1;
+    background-image: url("/web/20110724025953/http://ramonantonio.net/style/img/bgrepeat.jpg");
+    background-repeat: repeat-x;
+    color: #333;
+    font-family: "Lucida Grande","Tahoma","Verdana","Arial","Sans-Serif";
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+img {
+    border: 0 none;
+}
+textarea, input, select {
+    border: 1px solid #bdc7d8;
+    font-family: "Lucida Grande","Tahoma","Verdana","Arial","Sans-Serif";
+    font-size: 11px;
+    padding: 4px;
+}
+pre {
+    background-color: #eee;
+    border-color: #006;
+    border-style: dotted;
+    border-width: 1px;
+    color: black;
+    margin: 1em 4em;
+    padding: 0.5em;
+}
+a {
+    color: #3b5998;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#page {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #fff;
+    border-color: -moz-use-text-color #c2cfdf #c2cfdf;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 980px;
+}
+.menuitem {
+    width: 80px;
+}
+#footer {
+    background-color: #fff;
+    border: 1px solid #c2cfdf;
+    margin: 10px auto 20px;
+    padding: 0;
+    width: 980px;
+}
+#footer p {
+    color: #999;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+#header {
+    border: 0 solid red;
+    margin: 0;
+    padding: 15px 10px 0;
+}
+#header2 {
+    background-color: #93c0e1;
+    color: white;
+    font-size: 12px;
+    margin: 0;
+    padding: 8px;
+}
+#header2 a {
+    color: #f0f0f0;
+    font-weight: bold;
+    padding: 8px;
+    text-decoration: none;
+}
+#header2 a:hover, .header2hover, .header2hover:visited {
+    background-color: #f0f0f0;
+    color: #93c0e1;
+}
+.menuitem {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+#content {
+    padding: 30px 50px 60px;
+}
+.leftHalf {
+    clear: left;
+    float: left;
+}
+.rightHalf {
+    clear: none;
+    float: right;
+}
+.wrapper {
+    display: block;
+    float: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+}
+.columna {
+}
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
