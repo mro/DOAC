@@ -1,402 +1,490 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:dc="http://purl.org/dc/elements/1.1/">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <head>
-	<title>DOAC Vocabulary Specification</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<meta name="DC.title" content="DOAC Vocabulary Specification"/>
-	<meta name="DC.creator" content="http://ramonantonio.net/"/>
-	<meta name="DC.format" content="text/html"/>
-	<meta name="DC.rights" content="Copyright Ramon Antonio Parada"/>
+  <meta name="generator" content=
+  "HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.12), see www.w3.org" />
 
-	<link rel="meta" type="application/rdf+xml" title="devinfo" href="errors/" />
-	<link rel="stylesheet" type="text/css" href="view.css"/>
+  <title>DOAC Vocabulary Specification</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="DC.title" content="DOAC Vocabulary Specification" />
+  <meta name="DC.creator" content="http://ramonantonio.net/" />
+  <meta name="DC.format" content="text/html" />
+  <meta name="DC.rights" content="Copyright Ramon Antonio Parada" />
+  <link rel="meta" type="application/rdf+xml" title="devinfo" href="errors/" />
+  <link rel="stylesheet" type="text/css" href="view.css" />
+  <style type="text/css">
+/*<![CDATA[*/
+  h3 {
+    color: #096;
+    margin-top: 40px;
+  }
+  ul {
+    margin-left: 14px;
+  }
+  #main li {
+    padding: 4px;
+    padding-left: 12px;
+    background-position: 0px 8px;
+  }
+  .complete0 {
+    color: #d33;
+  }
+  .complete1 {
+    color: #3d3;
+  }
+  .example {
+    border: 1px dotted black;
+    background-color: #d9e3e9;
+    padding: 5px;
+  }
+
+  table {
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+  }
+
+  table td {
+    border: 1px solid #ccc;
+    margin: 0px;
+    padding: 5px;
+  }
+
+  .vproperty {
+    font-weight: bold;
+  }
+  /*]]>*/
+  </style>
 </head>
+
 <body>
+  <div id="page">
+    <div id="content">
+      <h1 class="heading">DOAC Vocabulary Specification</h1>
 
-<div id="page">
+      <h2>Working Draft</h2>
 
-<div id="content">
-<style>
+      <dl>
+        <dt>Latest version:</dt>
 
-		h3 {
-			color: #096;
-			margin-top: 40px;
-		}
-		ul {
-			margin-left: 14px;
-		}
-		#main li {
-			padding: 4px;
-			padding-left: 12px;
-			background-position: 0px 8px;
-		}
-		.complete0 {
-			color: #d33;
-		}
-		.complete1 {
-			color: #3d3;
-		}
-		.example {
-			border: 1px dotted black;
-			background-color: #d9e3e9;
-			padding: 5px;
-		}
+        <dd><a href="http://purl.mro.name/DOAC/Latest">http://purl.mro.name/DOAC/Latest</a>
+        (<a href="http://purl.mro.name/DOAC/0.1/ontology.rdf">rdfs</a>)</dd>
 
+        <dt>Last update:</dt>
 
-table {
- margin: 0px;
-padding: 0px;
-border-spacing: 0px;
-}
+        <dd>$Date: 2008/07/17 16:08:00 $</dd>
 
-table td {
- border: 1px solid #ccc;
- margin: 0px;
-padding: 5px;
-}
+        <dt>Revision:</dt>
 
-.vproperty {
-font-weight: bold;
-}
-	</style>
+        <dd>$Revision: 0.1.2 $</dd>
 
+        <dt>Author:</dt>
 
-<h1 class="heading">DOAC Vocabulary Specification</h1>
-	<h2>Working Draft</h2>
-	<dl>
-		<dt>Latest version:</dt>
-		<dd><a href="http://purl.mro.name/DOAC/Latest">http://purl.mro.name/DOAC/Latest</a>
-		(<a href="http://purl.mro.name/DOAC/0.1/ontology.rdf">rdfs</a>)</dd>
-		<dt>Last update:</dt>
-		<dd>$Date: 2008/07/17 16:08:00 $</dd>
-		<dt>Revision:</dt>
-		<dd>$Revision: 0.1.2 $</dd>
-		<dt>Author:</dt>
-		<dd><a href="mailto:rap@ramonantonio.net">Ramon Antonio Parada</a></dd>
-	</dl>
+        <dd><a href="mailto:rap@ramonantonio.net">Ramon Antonio Parada</a></dd>
+      </dl>
+      <hr />
 
-	<hr/>
-	<h2>DOAC Overview</h2>
-	<p><abbr title="Description Of A Career">DOAC</abbr> (Description Of A Career) is a vocabulary to descripve professional capabilities of a worker. It has been designed to be compatible with the <a href="http://europass.cedefop.eu.int/">Europass Curriculum</a> so those can be generated from a <abbr title="Friend Of A Friend">FOAF</abbr>+<abbr title="Description Of A Career">DOAC</abbr> file.</p>
-	
-	
-	
-	<pre>
-&lt;foaf:Person&gt;
-   &lt;foaf:name&gt;Ramon Antonio Parada&lt;/foaf:name&gt;
-   &lt;foaf:mbox rdf:resource="mailto:rap@ramonantonio.net" /&gt;
-   &lt;foaf:homepage rdf:resource="http://ramonantonio.net/" /&gt;
+      <h2>DOAC Overview</h2>
 
-   &lt;doac:experience&gt;
-      &lt;doac:VolunterExperience&gt;
-         &lt;doac:title&gt;Website Mantainer&lt;/doac:title&gt;
-         &lt;doac:organization&gt;Equus Zebra&lt;/doac:organization&gt;
-         &lt;doac:start-date&gt;2000-06-15&lt;/doac:start-date&gt;
-         &lt;doac:end-date&gt;2000-06-15&lt;/doac:end-date&gt;
-      &lt;/doac:VolunterExperience&gt;
-   &lt;/doac:experience&gt;
+      <p><abbr title="Description Of A Career">DOAC</abbr> (Description Of A Career) is a
+      vocabulary to descripve professional capabilities of a worker. It has been designed to be
+      compatible with the <a href="http://europass.cedefop.eu.int/">Europass Curriculum</a> so
+      those can be generated from a <abbr title="Friend Of A Friend">FOAF</abbr>+<abbr title=
+      "Description Of A Career">DOAC</abbr> file.</p>
+      <pre>
+&lt;rdf:RDF
+  xmlns:doac="http://ramonantonio.net/doac/0.1/#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"&gt;
+  &lt;foaf:Person&gt;
+     &lt;foaf:name&gt;Ramon Antonio Parada&lt;/foaf:name&gt;
+     &lt;foaf:mbox rdf:resource="mailto:rap@ramonantonio.net" /&gt;
+     &lt;foaf:homepage rdf:resource="http://ramonantonio.net/" /&gt;
 
-   &lt;doac:education&gt;
-      &lt;doac:Degree&gt;
-         &lt;doac:title&gt;Systems Engineer&lt;/doac:title&gt;
-         &lt;doac:organization&gt;University of a Corunha&lt;/doac:organization&gt;
-         &lt;doac:start-date&gt;2000-10-01&lt;/doac:start-date&gt;
-         &lt;doac:end-date&gt;2006-06-15&lt;/doac:end-date&gt;
-      &lt;/doac:Degree&gt;
-   &lt;/doac:education&gt;
+     &lt;doac:experience&gt;
+        &lt;doac:VolunterExperience&gt;
+           &lt;doac:title&gt;Website Mantainer&lt;/doac:title&gt;
+           &lt;doac:organization&gt;Equus Zebra&lt;/doac:organization&gt;
+           &lt;doac:start-date&gt;2000-06-15&lt;/doac:start-date&gt;
+           &lt;doac:end-date&gt;2000-06-15&lt;/doac:end-date&gt;
+        &lt;/doac:VolunterExperience&gt;
+     &lt;/doac:experience&gt;
 
-   &lt;doac:skill&gt;
-      &lt;doac:LanguageSkill&gt;
-         &lt;doac:language&gt;es&lt;/doac:language&gt;
-         &lt;doac:reads rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
-         &lt;doac:writes rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
-         &lt;doac:speaks rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
-      &lt;/doac:LanguageSkill&gt;
-   &lt;/doac:skill&gt;
+     &lt;doac:education&gt;
+        &lt;doac:Degree&gt;
+           &lt;doac:title&gt;Systems Engineer&lt;/doac:title&gt;
+           &lt;doac:organization&gt;University of a Corunha&lt;/doac:organization&gt;
+           &lt;doac:start-date&gt;2000-10-01&lt;/doac:start-date&gt;
+           &lt;doac:end-date&gt;2006-06-15&lt;/doac:end-date&gt;
+        &lt;/doac:Degree&gt;
+     &lt;/doac:education&gt;
 
-   &lt;doac:skill&gt;
-      &lt;doac:LanguageSkill&gt;
-         &lt;doac:language&gt;en&lt;/doac:language&gt;
+     &lt;doac:skill&gt;
+        &lt;doac:LanguageSkill&gt;
+           &lt;doac:language&gt;es&lt;/doac:language&gt;
+           &lt;doac:reads rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
+           &lt;doac:writes rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
+           &lt;doac:speaks rdf:resource="http://ramonantonio.net/doac/0.1/#nativelevel"/&gt;
+        &lt;/doac:LanguageSkill&gt;
+     &lt;/doac:skill&gt;
 
-         &lt;doac:reads rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
-         &lt;doac:writes rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
-         &lt;doac:speaks rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
-      &lt;/doac:LanguageSkill&gt;
-   &lt;/doac:skill&gt;
+     &lt;doac:skill&gt;
+        &lt;doac:LanguageSkill&gt;
+           &lt;doac:language&gt;en&lt;/doac:language&gt;
 
-&lt;/foaf:Person&gt;
+           &lt;doac:reads rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
+           &lt;doac:writes rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
+           &lt;doac:speaks rdf:resource="http://ramonantonio.net/doac/0.1/#highlevel"/&gt;
+        &lt;/doac:LanguageSkill&gt;
+     &lt;/doac:skill&gt;
+
+  &lt;/foaf:Person&gt;
+&lt;/rdf:RDF&gt;
 </pre>
-	
+      <hr />
 
-	<hr/>
+      <table>
+        <tr>
+          <th>Class</th>
 
-<table>
-<tr>
-	<th>Class</th>
-	<th>Property</th>
-	<th>Summary</th>
-	<th>Range</th>
-	<th>Status</th>
-</tr>
+          <th>Property</th>
 
-<tr>
-<td rowspan="6" class="vclass"><a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a></td>
+          <th>Summary</th>
 
-	<td class="vproperty"><a name="#summary"></a>doac:summary</td>
-	<td class="vsummary">Brief text description</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus">unstable</td>
-</tr>
+          <th>Range</th>
 
-<tr>
-	<td class="vproperty"><a name="#experience"></a>doac:experience</td>
-	<td class="vsummary">Work experience</td>
-	<td class="vrange"><a href="#Experience">doac:Experience</a></td>
-	<td class="vstatus">stable</td>
-</tr>
+          <th>Status</th>
+        </tr>
 
-<tr>
-	<td class="vproperty"><a name="#education"></a>doac:education</td>
-	<td class="vsummary">Education finished or to be finished</td>
-	<td class="vrange"><a href="#Education">doac:Education</a></td>
-	<td class="vstatus">stable</td>
-</tr>
+        <tr>
+          <td rowspan="6" class="vclass"><a href=
+          "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a></td>
 
-<tr>
-	<td class="vproperty"><a name="#skill"></a>doac:skill</td>
-	<td class="vsummary">Work experience</td>
-	<td class="vrange"><a href="#Skill">doac:Skill</a></td>
-	<td class="vstatus">stable</td>
-</tr>
+          <td class="vproperty"><a name="summary" id="summary"></a>doac:summary</td>
 
-<tr>
-	<td class="vproperty"><a name="#reference"></a>doac:reference</td>
-	<td class="vsummary">Reference</td>
-	<td class="vrange"><a href="#Reference">doac:Reference</a></td>
-	<td class="vstatus">stable</td>
-</tr>
+          <td class="vsummary">Brief text description</td>
 
-<tr>
-	<td class="vproperty"><a name="#publication"></a>doac:publication</td>
-	<td class="vsummary">Publication</td>
-	<td class="vrange"><a href="#Publication">doac:Publication</a></td>
-	<td class="vstatus">stable</td>
-</tr>
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
 
+          <td class="vstatus">unstable</td>
+        </tr>
 
+        <tr>
+          <td class="vproperty"><a name="experience" id="experience"></a>doac:experience</td>
 
-<tr>
-	<td rowspan="6"><a name="Experience"></a><b>doac:Experience</a></b><br/>Career experience</td>
+          <td class="vsummary">Work experience</td>
 
-	<td class="vproperty">doac:title</td>
-	<td class="vsummary">Title of qualification awarded</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:date-starts</td>
-	<td class="vsummary">Dates</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:date-ends</td>
-	<td class="vsummary">Dates</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:position</td>
-	<td class="vsummary">Occupation or position held</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:activity</td>
-	<td class="vsummary">Main activities and responsibilities</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:location</td>
-	<td class="vsummary">Location</td>
-	<td class="vrange"></td>
-	<td class="vstatus">unstable</td>
-</tr>
+          <td class="vrange"><a href="#Experience">doac:Experience</a></td>
 
+          <td class="vstatus">stable</td>
+        </tr>
 
-<tr>
-	<td rowspan="6"><a name="#Education"></a><b>doac:Education</b><br/>Education and training</td>
-	<td class="vproperty">doac:title</td>
-	<td class="vsummary">Title of qualification awarded</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">foaf:organization</td>
-	<td class="vsummary">Name and type of organization providing education and training</td>
-	<td class="vrange"></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:date-starts</td>
-	<td class="vsummary">Dates</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:date-ends</td>
-	<td class="vsummary">Dates</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:subject</td>
-	<td class="vsummary">Principal subjects/occupational skills covered</td>
-	<td class="vrange"><a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
-	<td class="vstatus"></td>
-</tr>
-<tr>
-	<td class="vproperty">doac:level</td>
-	<td class="vsummary">Level in national or international classification</td>
-	<td class="vrange"></td>
-	<td class="vstatus"></td>
-</tr>
-</table>
+        <tr>
+          <td class="vproperty"><a name="education" id="education"></a>doac:education</td>
 
+          <td class="vsummary">Education finished or to be finished</td>
 
-	<a name="#summary"></a>
-	<h3>Property: doac:summary</h3>
-	<em>Summary</em> - Brief text description<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
+          <td class="vrange"><a href="#Education">doac:Education</a></td>
 
-	<a name="#experience"></a>
-	<h3>Property: doac:experience</h3>
-	<em>Experience</em> - Work experience<br/>
-	<strong>Status:</strong> stable<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> <a href="#Experience">doac:Experience</a><br/>
+          <td class="vstatus">stable</td>
+        </tr>
 
-	<a name="#education"></a>
-	<h3>Property: doac:education</h3>
-	<em>Experience</em> - Education finished or to be finished<br/>
-	<strong>Status:</strong> testing<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> <a href="#Education">doac:Education</a><br/>
+        <tr>
+          <td class="vproperty"><a name="skill" id="skill"></a>doac:skill</td>
 
-	<a name="#skill"></a>
-	<h3>Property: doac:skill</h3>
-	<em>skill</em> - Work experience<br/>
-	<strong>Status:</strong> testing<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> <a href="#Skill">doac:Skill</a><br/>
+          <td class="vsummary">Work experience</td>
 
-	<a name="#reference"></a>
-	<h3>Property: doac:reference</h3>
-	<em>reference</em> - Reference<br/>
-	<strong>Status:</strong> testing<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> <a href="#Reference">doac:Reference</a><br/>
+          <td class="vrange"><a href="#Skill">doac:Skill</a></td>
 
-	<a name="#publication"></a>
-	<h3>Property: doac:publication</h3>
-	<em>publication</em> - Publication<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>Domain:</strong> <a href="http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br/>
-	<strong>Range:</strong> <a href="#Publication">doac:Publication</a><br/>
+          <td class="vstatus">stable</td>
+        </tr>
 
+        <tr>
+          <td class="vproperty"><a name="reference" id="reference"></a>doac:reference</td>
 
-<hr/>
-	<h3 id="#Experience">Class: doac:Experience</h3>
-	<em>Experience</em> - Work experience<br/>
-	<ul>
-		<li>Property: <em>doac:title</em> Title of qualification awarded</li>
-		<li>Property: <em>doac:date-starts</em> Dates</li>
-		<li>Property: <em>doac:date-ends</em> Dates</li>
-		<li>Property: <em>doac:position</em> Occupation or position held</li>
-		<li>Property: <em>doac:activity</em> Main activities and responsibilities</li>
-	</ul>
+          <td class="vsummary">Reference</td>
 
-	<h3 id="#Education">Class: doac:Education</h3>
-	<em>Education</em> - Education and training<br/>
-	<ul>
-		<li>Property: <em>doac:title</em> Title of qualification awarded</li>
-		<li>Class: <em>foaf:organization</em> Name and type of organization providing education and training</li>
-		<li>Property: <em>doac:date-starts</em> Dates</li>
-		<li>Property: <em>doac:date-ends</em> Dates</li>
-		<li>Property: <em>doac:subject</em> Principal subjects/occupational skills covered</li>
-		<li>Property: <em>doac:level</em> Level in national or international classification</li>
-	</ul>
+          <td class="vrange"><a href="#Reference">doac:Reference</a></td>
 
-	<h3 id="#Skill">Class: doac:Skill</h3>
-	<em>Skill</em> - Skills<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>Domain:</strong> foaf:Person<br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-	</ul>
+          <td class="vstatus">stable</td>
+        </tr>
 
-	<h3 id="#LanguageSkill">Class: doac:LanguageSkill</h3>
-	<em>LanguageSkill</em> - Language Skills<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-		<li>Property: <em>doac:language</em> Refered language</li>
-		<li>Property: <em>doac:reads</em> Reading capabilities</li>
-		<li>Property: <em>doac:writes</em> Writing capabilities</li>
-		<li>Property: <em>doac:speaks</em> Speaking capability</li>
-	</ul>
+        <tr>
+          <td class="vproperty"><a name="publication" id="publication"></a>doac:publication</td>
 
-	<h3 id="#SocialSkill">Class: doac:SocialSkill</h3>
-	<em>SocialSkill</em> - Social Skills<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-	</ul>
+          <td class="vsummary">Publication</td>
 
-	<h3 id="#OrganizationalSkill">Class: doac:OrganizationalSkill</h3>
-	<em>OrganizationalSkill</em> - Organizational Skill<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-	</ul>
+          <td class="vrange"><a href="#Publication">doac:Publication</a></td>
 
-	<h3 id="#ComputerSkill">Class: doac:ComputerSkill</h3>
-	<em>ComputerSkill</em> - Habilities using a computer<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-	</ul>
+          <td class="vstatus">stable</td>
+        </tr>
 
-	<h3 id="#ComputerSkill">Class: doac:DrivingSkill</h3>
-	<em>DrivingSkill</em> - Driving Licenses<br/>
-	<strong>Status:</strong> unstable<br/>
-	<strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br/>
-	<strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br/>
-	<ul>
-	</ul>
-</div> <!-- content -->
-</div> <!-- page -->
+        <tr>
+          <td rowspan="6"><a name="Experience" id="Experience"></a><b>doac:Experience</b><br />
+          Career experience</td>
 
-<div id="footer">
-<p>Copyright &copy; 1996-2009 Ramón Antonio Parada. <a href="http://creativecommons.org/licenses/by-nc/3.0/es/">Creative Commons BY-NC</a>.</p>
-</div> <!-- footer -->
-</body>
-</html>
+          <td class="vproperty">doac:title</td>
 
+          <td class="vsummary">Title of qualification awarded</td>
 
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
 
+          <td class="vstatus"></td>
+        </tr>
 
-<!--
+        <tr>
+          <td class="vproperty">doac:date-starts</td>
+
+          <td class="vsummary">Dates</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:date-ends</td>
+
+          <td class="vsummary">Dates</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:position</td>
+
+          <td class="vsummary">Occupation or position held</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:activity</td>
+
+          <td class="vsummary">Main activities and responsibilities</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:location</td>
+
+          <td class="vsummary">Location</td>
+
+          <td class="vrange"></td>
+
+          <td class="vstatus">unstable</td>
+        </tr>
+
+        <tr>
+          <td rowspan="6"><a name="Education" id="Education"></a><b>doac:Education</b><br />
+          Education and training</td>
+
+          <td class="vproperty">doac:title</td>
+
+          <td class="vsummary">Title of qualification awarded</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">foaf:organization</td>
+
+          <td class="vsummary">Name and type of organization providing education and training</td>
+
+          <td class="vrange"></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:date-starts</td>
+
+          <td class="vsummary">Dates</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:date-ends</td>
+
+          <td class="vsummary">Dates</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:subject</td>
+
+          <td class="vsummary">Principal subjects/occupational skills covered</td>
+
+          <td class="vrange"><a href=
+          "http://www.w3.org/2000/01/rdf-schema#Literal">rdf:Literal</a></td>
+
+          <td class="vstatus"></td>
+        </tr>
+
+        <tr>
+          <td class="vproperty">doac:level</td>
+
+          <td class="vsummary">Level in national or international classification</td>
+
+          <td class="vrange"></td>
+
+          <td class="vstatus"></td>
+        </tr>
+      </table><a name="summary" id="summary"></a>
+
+      <h3>Property: doac:summary</h3><em>Summary</em> - Brief text description<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+      <a name="experience" id="experience"></a>
+
+      <h3>Property: doac:experience</h3><em>Experience</em> - Work experience<br />
+      <strong>Status:</strong> stable<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> <a href="#Experience">doac:Experience</a><br />
+      <a name="education" id="education"></a>
+
+      <h3>Property: doac:education</h3><em>Experience</em> - Education finished or to be
+      finished<br />
+      <strong>Status:</strong> testing<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> <a href="#Education">doac:Education</a><br />
+      <a name="skill" id="skill"></a>
+
+      <h3>Property: doac:skill</h3><em>skill</em> - Work experience<br />
+      <strong>Status:</strong> testing<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> <a href="#Skill">doac:Skill</a><br />
+      <a name="reference" id="reference"></a>
+
+      <h3>Property: doac:reference</h3><em>reference</em> - Reference<br />
+      <strong>Status:</strong> testing<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> <a href="#Reference">doac:Reference</a><br />
+      <a name="publication" id="publication"></a>
+
+      <h3>Property: doac:publication</h3><em>publication</em> - Publication<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>Domain:</strong> <a href=
+      "http://xmlns.com/foaf/0.1/#term_Person">foaf:Person</a><br />
+      <strong>Range:</strong> <a href="#Publication">doac:Publication</a><br />
+      <hr />
+
+      <h3 id="Experience">Class: doac:Experience</h3><em>Experience</em> - Work experience<br />
+
+      <ul>
+        <li>Property: <em>doac:title</em> Title of qualification awarded</li>
+
+        <li>Property: <em>doac:date-starts</em> Dates</li>
+
+        <li>Property: <em>doac:date-ends</em> Dates</li>
+
+        <li>Property: <em>doac:position</em> Occupation or position held</li>
+
+        <li>Property: <em>doac:activity</em> Main activities and responsibilities</li>
+      </ul>
+
+      <h3 id="Education">Class: doac:Education</h3><em>Education</em> - Education and
+      training<br />
+
+      <ul>
+        <li>Property: <em>doac:title</em> Title of qualification awarded</li>
+
+        <li>Class: <em>foaf:organization</em> Name and type of organization providing education and
+        training</li>
+
+        <li>Property: <em>doac:date-starts</em> Dates</li>
+
+        <li>Property: <em>doac:date-ends</em> Dates</li>
+
+        <li>Property: <em>doac:subject</em> Principal subjects/occupational skills covered</li>
+
+        <li>Property: <em>doac:level</em> Level in national or international classification</li>
+      </ul>
+
+      <h3 id="Skill">Class: doac:Skill</h3><em>Skill</em> - Skills<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>Domain:</strong> foaf:Person<br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+
+      <h3 id="LanguageSkill">Class: doac:LanguageSkill</h3><em>LanguageSkill</em> - Language
+      Skills<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+
+      <ul>
+        <li>Property: <em>doac:language</em> Refered language</li>
+
+        <li>Property: <em>doac:reads</em> Reading capabilities</li>
+
+        <li>Property: <em>doac:writes</em> Writing capabilities</li>
+
+        <li>Property: <em>doac:speaks</em> Speaking capability</li>
+      </ul>
+
+      <h3 id="SocialSkill">Class: doac:SocialSkill</h3><em>SocialSkill</em> - Social Skills<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+
+      <h3 id="OrganizationalSkill">Class: doac:OrganizationalSkill</h3><em>OrganizationalSkill</em>
+      - Organizational Skill<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+
+      <h3 id="ComputerSkill">Class: doac:ComputerSkill</h3><em>ComputerSkill</em> - Habilities
+      using a computer<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+
+      <h3 id="ComputerSkill">Class: doac:DrivingSkill</h3><em>DrivingSkill</em> - Driving
+      Licenses<br />
+      <strong>Status:</strong> unstable<br />
+      <strong>subClassOf:</strong> <a href="#Skill">doac:Skill</a><br />
+      <strong>Range:</strong> http://www.w3.org/2000/01/rdf-schema#Literal<br />
+    </div><!-- content -->
+  </div><!-- page -->
+
+  <div id="footer">
+    <p>Copyright © 1996-2009 Ramón Antonio Parada. <a href=
+    "http://creativecommons.org/licenses/by-nc/3.0/es/">Creative Commons BY-NC</a>.</p>
+  </div><!-- footer -->
+  <!--
      FILE ARCHIVED ON 3:03:45 Jul 24, 2011 AND RETRIEVED FROM THE
      INTERNET ARCHIVE ON 19:10:57 Feb 3, 2016.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
@@ -404,3 +492,5 @@ font-weight: bold;
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
      SECTION 108(a)(3)).
 -->
+</body>
+</html>
