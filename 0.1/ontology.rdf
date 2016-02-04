@@ -15,7 +15,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#experience">
@@ -25,7 +25,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Experience"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#education">
@@ -35,7 +35,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Education"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#skill">
@@ -45,7 +45,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#reference">
@@ -55,7 +55,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Reference"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#publication">
@@ -65,7 +65,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="#Publication"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <!-- Experience Class  -->
@@ -75,7 +75,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdf:Property rdf:about="#title">
@@ -85,7 +85,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#organization">
@@ -95,7 +95,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#start-date">
@@ -104,7 +104,7 @@
     <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#end-date">
@@ -115,7 +115,7 @@
     <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#isco88-code">
@@ -125,7 +125,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <!-- Education Class  -->
@@ -135,7 +135,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdf:Property rdf:about="#title">
@@ -145,7 +145,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#organization">
@@ -155,7 +155,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <rdfs:Class rdf:about="#Degree">
@@ -164,7 +164,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#Course">
@@ -173,7 +173,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#SecondarySchool">
@@ -182,7 +182,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#PrimarySchool">
@@ -191,7 +191,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- Skill Class  -->
@@ -201,7 +201,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- Reference Class  -->
@@ -211,7 +211,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#reference-type">
@@ -220,7 +220,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Reference"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
   <rdf:Property rdf:about="#referer">
@@ -230,7 +230,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:domain rdf:resource="#Reference"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <!-- LanguageSkill Class  -->
@@ -240,7 +240,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#SocialSkill">
@@ -249,7 +249,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#OrganizationalSkill">
@@ -258,7 +258,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#ComputerSkill">
@@ -267,7 +267,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <rdfs:Class rdf:about="#DrivingSkill">
@@ -276,7 +276,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="#Skill"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- LanguageSkill Properties -->
@@ -287,7 +287,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#LanguageSkill"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#reads">
@@ -297,7 +297,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#LanguageSkill"/>
     <rdfs:range rdf:resource="#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#writes">
@@ -307,7 +307,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#LanguageSkill"/>
     <rdfs:range rdf:resource="#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <rdf:Property rdf:about="#speaks">
@@ -317,7 +317,7 @@
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="#LanguageSkill"/>
     <rdfs:range rdf:resource="#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <!-- LanguageLevel Class  -->
@@ -327,7 +327,7 @@
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource=""/>
+    <rdfs:isDefinedBy rdf:resource="http://purl.mro.name/doac/0.1/ontology.rdf"/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
 </rdf:RDF>
