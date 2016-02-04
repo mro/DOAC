@@ -1,332 +1,333 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rdf:RDF
+	xml:base="http://ramonantonio.net/doac/0.1/"
+	xmlns:doac="http://ramonantonio.net/doac/0.1/#"
 	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:vs="http://www.w3.org/2003/06/sw-vocab-status/ns#"
-	xmlns:doac="http://ramonantonio.net/doac/0.1/#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <!-- foaf:Person Properties  -->
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#summary">
+  <rdf:Property rdf:about="#summary">
     <rdfs:label xml:lang="en">Summary</rdfs:label>
     <rdfs:label xml:lang="es">Resumen</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#experience">
+  <rdf:Property rdf:about="#experience">
     <rdfs:label xml:lang="en">experience</rdfs:label>
     <rdfs:label xml:lang="es">experiencia</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:range rdf:resource="#Experience"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#education">
+  <rdf:Property rdf:about="#education">
     <rdfs:label xml:lang="en">education</rdfs:label>
     <rdfs:label xml:lang="es">educacion</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#Education"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:range rdf:resource="#Education"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#skill">
+  <rdf:Property rdf:about="#skill">
     <rdfs:label xml:lang="en">skill</rdfs:label>
     <rdfs:label xml:lang="es">habilidad</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:range rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#reference">
+  <rdf:Property rdf:about="#reference">
     <rdfs:label xml:lang="en">reference</rdfs:label>
     <rdfs:label xml:lang="es">referencia</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#Reference"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:range rdf:resource="#Reference"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#publication">
+  <rdf:Property rdf:about="#publication">
     <rdfs:label xml:lang="en">publication</rdfs:label>
     <rdfs:label xml:lang="es">publicacion</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#Publication"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:range rdf:resource="#Publication"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>stable</vs:term_status>
   </rdf:Property>
   <!-- Experience Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Experience">
+  <rdfs:Class rdf:about="#Experience">
     <rdfs:label xml:lang="en">Experience</rdfs:label>
     <rdfs:label xml:lang="es">Experiencia</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#title">
+  <rdf:Property rdf:about="#title">
     <rdfs:label xml:lang="en">title</rdfs:label>
     <rdfs:label xml:lang="es">titulo</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
+    <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#organization">
+  <rdf:Property rdf:about="#organization">
     <rdfs:label xml:lang="en">Driving Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Conducir</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
+    <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#start-date">
+  <rdf:Property rdf:about="#start-date">
     <rdfs:comment xml:lang="en">start date</rdfs:comment>
     <rdfs:comment xml:lang="es">fecha comienzo</rdfs:comment>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Education"/>
+    <rdfs:domain rdf:resource="#Experience"/>
+    <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#end-date">
+  <rdf:Property rdf:about="#end-date">
     <rdfs:label xml:lang="en">end date</rdfs:label>
     <rdfs:label xml:lang="es">fecha final</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Education"/>
+    <rdfs:domain rdf:resource="#Experience"/>
+    <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#isco88-code">
+  <rdf:Property rdf:about="#isco88-code">
     <rdfs:label xml:lang="en">isco88 code</rdfs:label>
     <rdfs:label xml:lang="es">codigo isco88</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Experience"/>
+    <rdfs:domain rdf:resource="#Experience"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <!-- Education Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Education">
+  <rdfs:Class rdf:about="#Education">
     <rdfs:label xml:lang="en">Education</rdfs:label>
     <rdfs:label xml:lang="es">Educacion</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#title">
+  <rdf:Property rdf:about="#title">
     <rdfs:label xml:lang="en">title</rdfs:label>
     <rdfs:label xml:lang="es">titulo</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Education"/>
+    <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#organization">
+  <rdf:Property rdf:about="#organization">
     <rdfs:label xml:lang="en">organization</rdfs:label>
     <rdfs:label xml:lang="es">organizacion</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Education"/>
+    <rdfs:domain rdf:resource="#Education"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Degree">
+  <rdfs:Class rdf:about="#Degree">
     <rdfs:label xml:lang="en">Degree</rdfs:label>
     <rdfs:label xml:lang="es">Titulo Universitario</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Course">
+  <rdfs:Class rdf:about="#Course">
     <rdfs:label xml:lang="en">Course</rdfs:label>
     <rdfs:label xml:lang="es">Curso</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#SecondarySchool">
+  <rdfs:Class rdf:about="#SecondarySchool">
     <rdfs:label xml:lang="en">Secondary School</rdfs:label>
     <rdfs:label xml:lang="es">Escuela Secundaria</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#PrimarySchool">
+  <rdfs:Class rdf:about="#PrimarySchool">
     <rdfs:label xml:lang="en">Primary School</rdfs:label>
     <rdfs:label xml:lang="es">Escuela Primaria</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Education"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- Skill Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Skill">
+  <rdfs:Class rdf:about="#Skill">
     <rdfs:label xml:lang="en">Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- Reference Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#Reference">
+  <rdfs:Class rdf:about="#Reference">
     <rdfs:label xml:lang="en">Reference</rdfs:label>
     <rdfs:label xml:lang="es">Referencia</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#reference-type">
+  <rdfs:Class rdf:about="#reference-type">
     <rdfs:label xml:lang="en">reference type</rdfs:label>
     <rdfs:label xml:lang="es">tipo referencia</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Reference"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Reference"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#referer">
+  <rdf:Property rdf:about="#referer">
     <rdfs:label xml:lang="en">referer</rdfs:label>
     <rdfs:label xml:lang="es">referenciante</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#Reference"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:domain rdf:resource="#Reference"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdf:Property>
   <!-- LanguageSkill Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#LanguageSkill">
+  <rdfs:Class rdf:about="#LanguageSkill">
     <rdfs:label xml:lang="en">Language Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Linguistica</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#SocialSkill">
+  <rdfs:Class rdf:about="#SocialSkill">
     <rdfs:label xml:lang="en">Social Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Social</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#OrganizationalSkill">
+  <rdfs:Class rdf:about="#OrganizationalSkill">
     <rdfs:label xml:lang="en">Organizational Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Organizativa</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#ComputerSkill">
+  <rdfs:Class rdf:about="#ComputerSkill">
     <rdfs:label xml:lang="en">Computer Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Informatica</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#DrivingSkill">
+  <rdfs:Class rdf:about="#DrivingSkill">
     <rdfs:label xml:lang="en">Driving Skill</rdfs:label>
     <rdfs:label xml:lang="es">Habilidad Conducir</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:subClassOf rdf:resource="http://ramonantonio.net/doac/0.1/#Skill"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:subClassOf rdf:resource="#Skill"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdfs:Class>
   <!-- LanguageSkill Properties -->
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#language">
+  <rdf:Property rdf:about="#language">
     <rdfs:label xml:lang="en">language</rdfs:label>
     <rdfs:label xml:lang="es">idioma</rdfs:label>
     <rdfs:comment xml:lang="en">Literal, must be an iso-639-1 code.</rdfs:comment>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageSkill"/>
+    <rdfs:domain rdf:resource="#LanguageSkill"/>
     <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#reads">
+  <rdf:Property rdf:about="#reads">
     <rdfs:label xml:lang="en">reads</rdfs:label>
     <rdfs:label xml:lang="es">lee</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageSkill"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:domain rdf:resource="#LanguageSkill"/>
+    <rdfs:range rdf:resource="#LanguageLevel"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#writes">
+  <rdf:Property rdf:about="#writes">
     <rdfs:label xml:lang="en">writes</rdfs:label>
     <rdfs:label xml:lang="es">escribe</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageSkill"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:domain rdf:resource="#LanguageSkill"/>
+    <rdfs:range rdf:resource="#LanguageLevel"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
-  <rdf:Property rdf:about="http://ramonantonio.net/doac/0.1/#speaks">
+  <rdf:Property rdf:about="#speaks">
     <rdfs:label xml:lang="en">speaks</rdfs:label>
     <rdfs:label xml:lang="es">habla</rdfs:label>
     <rdfs:comment xml:lang="en">Mmust be an iso-639-1 code</rdfs:comment>
     <rdfs:comment xml:lang="es"/>
-    <rdfs:domain rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageSkill"/>
-    <rdfs:range rdf:resource="http://ramonantonio.net/doac/0.1/#LanguageLevel"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:domain rdf:resource="#LanguageSkill"/>
+    <rdfs:range rdf:resource="#LanguageLevel"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>testing</vs:term_status>
   </rdf:Property>
   <!-- LanguageLevel Class  -->
-  <rdfs:Class rdf:about="http://ramonantonio.net/doac/0.1/#LanguageLevel">
+  <rdfs:Class rdf:about="#LanguageLevel">
     <rdfs:label xml:lang="en">Language Level</rdfs:label>
     <rdfs:label xml:lang="es">Nivel Idioma</rdfs:label>
     <rdfs:comment xml:lang="en"/>
     <rdfs:comment xml:lang="es"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
-    <rdfs:isDefinedBy rdf:resource="http://ramonantonio.net/doac/0.1/"/>
+    <rdfs:isDefinedBy rdf:resource=""/>
     <vs:term_status>unstable</vs:term_status>
   </rdfs:Class>
 </rdf:RDF>
